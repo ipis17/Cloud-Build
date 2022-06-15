@@ -16,4 +16,12 @@ steps:
     args:
     - 'push'
     - 'us-east1-docker.pkg.dev/$PROJECT_ID/hello/hello-cloudbuild:$SHORT_SHA'
-    # [END cloudbuild]
+  
+  # deploy container image to GKE
+  - name: "gcr.io/cloud-builders/gke-deploy"
+    args:
+    - run
+    - --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild
+    - --location=us-central1-c
+    - --cluster=cluster-1
+      
