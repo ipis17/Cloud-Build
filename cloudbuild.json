@@ -8,7 +8,7 @@
       "-c",
        "curl -X POST -H \"Authorization:Bearer $$GH_TOKEN\" -H 'Accept:application/vnd.github.v3+json' https://api.github.com/repos/ipis17/Cloud-Build -d '{\"head\":\"master\",\"base\":\"dev\", \"title\":\"new_pull\"}"
     ],
-    "secretEnv": ["GH_TOKEN"]
+    "secretEnv": "GH_TOKEN"
 }
 ],
 "availableSecrets": {
