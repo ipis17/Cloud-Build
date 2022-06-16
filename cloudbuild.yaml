@@ -26,4 +26,4 @@ steps:
     - --app=nginx-1
     - --expose=80
     - --location=us-central1-c
-    - --cluster=cluster-1
+    - --cluster=my-cluster
