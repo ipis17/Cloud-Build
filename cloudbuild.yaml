@@ -24,6 +24,6 @@ steps:
     #- --filename=gs://testingdarwin/config/workload.yaml
     - --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
     - --app=nginx-1
-    - --expose=80
+    - --expose=8080
     - --location=us-east1-b
     - --cluster=my-cluster
