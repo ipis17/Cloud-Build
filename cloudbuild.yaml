@@ -25,5 +25,5 @@ steps:
     #- --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
     - --app=nginx-1
     - --expose=80
-    - --location=us-central1-c
+    - --location=us-east1-b
     - --cluster=my-cluster
