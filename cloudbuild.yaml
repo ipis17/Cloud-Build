@@ -25,9 +25,3 @@ steps:
     # - --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
     - --location=us-central1-c
     - --cluster=cluster-1
-
-  # deploy container image to GKE
-  - name: "gcr.io/cloud-builders/gke-deploy"
-    args:
-    - run
-    - --filename=gs://testingdarwin/config/service.yaml
