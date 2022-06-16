@@ -22,7 +22,7 @@ steps:
     args:
     - run
     - --filename=gs://testingdarwin/config/workload.yaml
-    - --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
+    #- --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
     - --expose=8080
     - --location=us-central1-c
     - --cluster=cluster-1
