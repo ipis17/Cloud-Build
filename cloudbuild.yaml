@@ -21,8 +21,8 @@ steps:
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
     - run
-    - --filename=gs://testingdarwin/config/workload.yaml
-    #- --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
+    #- --filename=gs://testingdarwin/config/workload.yaml
+    - --image=us-east1-docker.pkg.dev/test-darwin-328107/hello/hello-cloudbuild:$SHORT_SHA
     - --app=nginx-1
     - --expose=80
     - --location=us-east1-b
